@@ -1,0 +1,10 @@
+services:
+  caddy:
+    image: caddy:2
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/srv
+    environment:
+      - CADDY_AUTOHTTPS=off  # Disable HTTPS auto
+    command: ["caddy", "file-server", "--root", "/srv", "--listen", ":80"]
