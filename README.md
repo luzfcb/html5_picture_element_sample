@@ -2,7 +2,7 @@
 
 This repository demonstrates the use of the HTML5 `<picture>` element to serve responsive images in multiple formats (AVIF, WebP, JPEG) across different screen resolutions and .
 
-🔗 **Live Demo**: [https://luzfcb.github.io/html5\_picture\_element\_sample](https://luzfcb.github.io/html5_picture_element_sample)
+🔗 **Live Demo**: [https://luzfcb.github.io/html5_picture_element_sample/](https://luzfcb.github.io/html5_picture_element_sample/)
 
 
 ### Example of use of `<picture>` element with responsive images via media query and multiple formats and multiple DPR (Device pixel ratio)<
