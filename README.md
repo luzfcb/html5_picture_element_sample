@@ -33,7 +33,7 @@ https://dev.to/technoph1le/the-html-element-explained-48o8
 1. Clone this repo:
 
    ```bash
-   git clone <this-repo-url>
+   git clone https://github.com/luzfcb/html5_picture_element_sample.git
    cd html5_picture_element_sample
    ```
 
