@@ -75,5 +75,70 @@
       sizes="(max-width: 400px) 100vw, (max-width: 800px) 50vw, (max-width: 1440px) 33vw, 1440px"
       alt="Example of use of picture element with responsive images via media query and multiple formats and multiple Device pixel ratio (DPR)">
   </picture>
+  
+  <h1>The source code of the sample of picture element</h1>
+  <code>
+  &lt;picture&gt;
+    &lt;!-- Very large images for extra-wide viewports --&gt;
+    &lt;source
+      media=&quot;(min-width: 1440px)&quot;
+      type=&quot;image/avif&quot;
+      srcset=&quot;images/image-verylarge.avif 1x, images/image-verylarge@2x.avif 2x&quot;&gt;
+    &lt;source
+      media=&quot;(min-width: 1440px)&quot;
+      type=&quot;image/webp&quot;
+      srcset=&quot;images/image-verylarge.webp 1x, images/image-verylarge@2x.webp 2x&quot;&gt;
+    &lt;source
+      media=&quot;(min-width: 1440px)&quot;
+      type=&quot;image/jpeg&quot;
+      srcset=&quot;images/image-verylarge.jpg 1x, images/image-verylarge@2x.jpg 2x&quot;&gt;
+
+    &lt;!-- High-resolution images for wide viewports --&gt;
+    &lt;source
+      media=&quot;(min-width: 800px)&quot;
+      type=&quot;image/avif&quot;
+      srcset=&quot;images/image-large.avif 1x, images/image-large@2x.avif 2x&quot;&gt;
+    &lt;source
+      media=&quot;(min-width: 800px)&quot;
+      type=&quot;image/webp&quot;
+      srcset=&quot;images/image-large.webp 1x, images/image-large@2x.webp 2x&quot;&gt;
+    &lt;source
+      media=&quot;(min-width: 800px)&quot;
+      type=&quot;image/jpeg&quot;
+      srcset=&quot;images/image-large.jpg 1x, images/image-large@2x.jpg 2x&quot;&gt;
+
+    &lt;!-- Medium-resolution images for mid-sized viewports --&gt;
+    &lt;source
+      media=&quot;(min-width: 400px) and (max-width: 799px)&quot;
+      type=&quot;image/avif&quot;
+      srcset=&quot;images/image-medium.avif 1x, images/image-medium@2x.avif 2x&quot;&gt;
+    &lt;source
+      media=&quot;(min-width: 400px) and (max-width: 799px)&quot;
+      type=&quot;image/webp&quot;
+      srcset=&quot;images/image-medium.webp 1x, images/image-medium@2x.webp 2x&quot;&gt;
+    &lt;source
+      media=&quot;(min-width: 400px) and (max-width: 799px)&quot;
+      type=&quot;image/jpeg&quot;
+      srcset=&quot;images/image-medium.jpg 1x, images/image-medium@2x.jpg 2x&quot;&gt;
+
+    &lt;!-- Low-resolution images as default fallback --&gt;
+    &lt;source
+      type=&quot;image/avif&quot;
+      srcset=&quot;images/image-small.avif 1x, images/image-small@2x.avif 2x&quot;&gt;
+    &lt;source
+      type=&quot;image/webp&quot;
+      srcset=&quot;images/image-small.webp 1x, images/image-small@2x.webp 2x&quot;&gt;
+    &lt;source
+      type=&quot;image/jpeg&quot;
+      srcset=&quot;images/image-small.jpg 1x, images/image-small@2x.jpg 2x&quot;&gt;
+
+    &lt;!-- fallback image --&gt;
+    &lt;img
+      src=&quot;images/image-small.jpg&quot;
+      srcset=&quot;images/image-small.jpg 1x, images/image-small@2x.jpg 2x&quot;
+      sizes=&quot;(max-width: 400px) 100vw, (max-width: 800px) 50vw, (max-width: 1440px) 33vw, 1440px&quot;
+      alt=&quot;Example of use of picture element with responsive images via media query and multiple formats and multiple Device pixel ratio (DPR)&quot;&gt;
+  &lt;/picture&gt;
+  </code>
 </body>
 </html>
