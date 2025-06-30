@@ -86,67 +86,67 @@
   
   <h1>The source code of the sample of picture element</h1>
   <pre><code class="language-html">
-  <picture>
-    <!-- Very large images for extra-wide viewports -->
-    <source
-      media="(min-width: 1440px)"
-      type="image/avif"
-      srcset="images/image-verylarge.avif 1x, images/image-verylarge@2x.avif 2x">
-    <source
-      media="(min-width: 1440px)"
-      type="image/webp"
-      srcset="images/image-verylarge.webp 1x, images/image-verylarge@2x.webp 2x">
-    <source
-      media="(min-width: 1440px)"
-      type="image/jpeg"
-      srcset="images/image-verylarge.jpg 1x, images/image-verylarge@2x.jpg 2x">
+  &#x3C;picture&#x3E;
+    &#x3C;!-- Very large images for extra-wide viewports --&#x3E;
+    &#x3C;source
+      media=&#x22;(min-width: 1440px)&#x22;
+      type=&#x22;image/avif&#x22;
+      srcset=&#x22;images/image-verylarge.avif 1x, images/image-verylarge@2x.avif 2x&#x22;&#x3E;
+    &#x3C;source
+      media=&#x22;(min-width: 1440px)&#x22;
+      type=&#x22;image/webp&#x22;
+      srcset=&#x22;images/image-verylarge.webp 1x, images/image-verylarge@2x.webp 2x&#x22;&#x3E;
+    &#x3C;source
+      media=&#x22;(min-width: 1440px)&#x22;
+      type=&#x22;image/jpeg&#x22;
+      srcset=&#x22;images/image-verylarge.jpg 1x, images/image-verylarge@2x.jpg 2x&#x22;&#x3E;
 
-    <!-- High-resolution images for wide viewports -->
-    <source
-      media="(min-width: 800px)"
-      type="image/avif"
-      srcset="images/image-large.avif 1x, images/image-large@2x.avif 2x">
-    <source
-      media="(min-width: 800px)"
-      type="image/webp"
-      srcset="images/image-large.webp 1x, images/image-large@2x.webp 2x">
-    <source
-      media="(min-width: 800px)"
-      type="image/jpeg"
-      srcset="images/image-large.jpg 1x, images/image-large@2x.jpg 2x">
+    &#x3C;!-- High-resolution images for wide viewports --&#x3E;
+    &#x3C;source
+      media=&#x22;(min-width: 800px)&#x22;
+      type=&#x22;image/avif&#x22;
+      srcset=&#x22;images/image-large.avif 1x, images/image-large@2x.avif 2x&#x22;&#x3E;
+    &#x3C;source
+      media=&#x22;(min-width: 800px)&#x22;
+      type=&#x22;image/webp&#x22;
+      srcset=&#x22;images/image-large.webp 1x, images/image-large@2x.webp 2x&#x22;&#x3E;
+    &#x3C;source
+      media=&#x22;(min-width: 800px)&#x22;
+      type=&#x22;image/jpeg&#x22;
+      srcset=&#x22;images/image-large.jpg 1x, images/image-large@2x.jpg 2x&#x22;&#x3E;
 
-    <!-- Medium-resolution images for mid-sized viewports -->
-    <source
-      media="(min-width: 400px) and (max-width: 799px)"
-      type="image/avif"
-      srcset="images/image-medium.avif 1x, images/image-medium@2x.avif 2x">
-    <source
-      media="(min-width: 400px) and (max-width: 799px)"
-      type="image/webp"
-      srcset="images/image-medium.webp 1x, images/image-medium@2x.webp 2x">
-    <source
-      media="(min-width: 400px) and (max-width: 799px)"
-      type="image/jpeg"
-      srcset="images/image-medium.jpg 1x, images/image-medium@2x.jpg 2x">
+    &#x3C;!-- Medium-resolution images for mid-sized viewports --&#x3E;
+    &#x3C;source
+      media=&#x22;(min-width: 400px) and (max-width: 799px)&#x22;
+      type=&#x22;image/avif&#x22;
+      srcset=&#x22;images/image-medium.avif 1x, images/image-medium@2x.avif 2x&#x22;&#x3E;
+    &#x3C;source
+      media=&#x22;(min-width: 400px) and (max-width: 799px)&#x22;
+      type=&#x22;image/webp&#x22;
+      srcset=&#x22;images/image-medium.webp 1x, images/image-medium@2x.webp 2x&#x22;&#x3E;
+    &#x3C;source
+      media=&#x22;(min-width: 400px) and (max-width: 799px)&#x22;
+      type=&#x22;image/jpeg&#x22;
+      srcset=&#x22;images/image-medium.jpg 1x, images/image-medium@2x.jpg 2x&#x22;&#x3E;
 
-    <!-- Low-resolution images as default fallback -->
-    <source
-      type="image/avif"
-      srcset="images/image-small.avif 1x, images/image-small@2x.avif 2x">
-    <source
-      type="image/webp"
-      srcset="images/image-small.webp 1x, images/image-small@2x.webp 2x">
-    <source
-      type="image/jpeg"
-      srcset="images/image-small.jpg 1x, images/image-small@2x.jpg 2x">
+    &#x3C;!-- Low-resolution images as default fallback --&#x3E;
+    &#x3C;source
+      type=&#x22;image/avif&#x22;
+      srcset=&#x22;images/image-small.avif 1x, images/image-small@2x.avif 2x&#x22;&#x3E;
+    &#x3C;source
+      type=&#x22;image/webp&#x22;
+      srcset=&#x22;images/image-small.webp 1x, images/image-small@2x.webp 2x&#x22;&#x3E;
+    &#x3C;source
+      type=&#x22;image/jpeg&#x22;
+      srcset=&#x22;images/image-small.jpg 1x, images/image-small@2x.jpg 2x&#x22;&#x3E;
 
-    <!-- fallback image -->
-    <img
-      src="images/image-small.jpg"
-      srcset="images/image-small.jpg 1x, images/image-small@2x.jpg 2x"
-      sizes="(max-width: 400px) 100vw, (max-width: 800px) 50vw, (max-width: 1440px) 33vw, 1440px"
-      alt="Example of use of picture element with responsive images via media query and multiple formats and multiple Device pixel ratio (DPR)">
-  </picture>
+    &#x3C;!-- fallback image --&#x3E;
+    &#x3C;img
+      src=&#x22;images/image-small.jpg&#x22;
+      srcset=&#x22;images/image-small.jpg 1x, images/image-small@2x.jpg 2x&#x22;
+      sizes=&#x22;(max-width: 400px) 100vw, (max-width: 800px) 50vw, (max-width: 1440px) 33vw, 1440px&#x22;
+      alt=&#x22;Example of use of picture element with responsive images via media query and multiple formats and multiple Device pixel ratio (DPR)&#x22;&#x3E;
+  &#x3C;/picture&#x3E;
   
   </code>
   </pre>
